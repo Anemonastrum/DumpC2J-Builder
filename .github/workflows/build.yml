@@ -128,7 +128,7 @@ jobs:
         run: |
           git clone --depth=50 --filter=blob:none \
             --branch main \
-            https://${{ secrets.GH_TOKEN }}@github.com/adennnqt/DumpC2J-Kernel \
+            https://${{ secrets.GH_TOKEN }}@github.com/Anemonastrum/xiaomi_sm8735 \
             kernel-source
 
       - name: Parse Inputs
