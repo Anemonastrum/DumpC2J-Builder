@@ -127,7 +127,7 @@ jobs:
       - name: Clone Kernel Source
         run: |
           git clone --depth=50 --filter=blob:none \
-            --branch main \
+            --branch lineage-23.2 \
             https://${{ secrets.GH_TOKEN }}@github.com/Anemonastrum/xiaomi_sm8735 \
             kernel-source
 
