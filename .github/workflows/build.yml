@@ -128,13 +128,8 @@ jobs:
         run: |
           git clone --depth=50 --filter=blob:none \
             --branch oss \
-            https://${{ secrets.GH_TOKEN }}@github.com/Anemonastrum/kernel_xiaomi_sm8735 \
+            https://${{ secrets.GH_TOKEN }}@github.com/Anemonastrum/onyx-gki \
             kernel-source 
-          git clone --depth=1 --filter=blob:none \
-            --branch main \
-            https://${{ secrets.GH_TOKEN }}@github.com/adennnqt/DumpC2J-6.6 temp
-          mv temp/anykernel kernel-source/anykernel
-          rm -rf temp
 
       - name: Parse Inputs
         id: setup_vars
